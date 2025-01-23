@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 215px;
+    height: 16rem;
+}
+
+#display {
+    text-align: right;
+    font-size: 2em;
+    width: 95%;
+    height: 38px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+.btn {
+    margin-bottom: 1px;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid black;
+    border-radius: 7%;
+    background-color: black;
+    color: #eee;
+    font-family: serif;
+    font-size: 1em;
+}
+
+.fila {
+    display: block;
+}
