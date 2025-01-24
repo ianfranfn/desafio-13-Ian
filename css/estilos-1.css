@@ -3,21 +3,36 @@ body {
     justify-content: center;
 }
 
+img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+
 .calculadora {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 3em);
+    gap: 10px;
     justify-content: center;
     width: 215px;
     height: 16rem;
 }
 
 #display {
+    grid-column: span 5;
     text-align: right;
     font-size: 2em;
+    text-shadow: #0e0e11 1px 2px 3px;
     width: 95%;
     height: 38px;
     border: 1px solid black;
+    background-color: #eee;
+    box-shadow: #4f4f50 5px 9px 9px;
     border-radius: 5px;
     margin-bottom: 3px;
 }
@@ -26,12 +41,15 @@ body {
     margin-bottom: 1px;
     width: 3rem;
     height: 3rem;
+    margin-top: 0.3rem;
     border: 1px solid black;
     border-radius: 7%;
-    background-color: black;
+    background: linear-gradient(to bottom right, #959595, #4d4d4d, #0e0e11);
+    box-shadow: #4f4f50 4px 5px 3px;
     color: #eee;
     font-family: serif;
     font-size: 1em;
+    text-shadow: #eee 2px 1px 4px;
 }
 
 .fila {
